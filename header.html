@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Header</title>
+        <link rel="stylesheet" href="./assets/css/bootstrap.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <script src="./assets/js/bootstrap.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <!-- custom Files -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/responsiveness.css">
+        <script src="./assets/js/theme.js"></script>
+    </head>
+
+    <body>
+        <section class="header_component">
+            <div class="container-fluid">
+
+                <div class="header-topbar">
+                    <div class="topbar-left" style="display:flex;align-items:center;gap:12px;">
+                        <a class="logo-link" href="/" title="Knockdown">
+                            <img src="./assets/img/header-logo.svg" alt="Knockdown logo">
+                        </a>
+                    </div>
+
+                    <div class="global_searchbar hidden_mobile">
+                        <span class="search-icon-wrapper">
+                            <img src="./assets/img/search-icon.svg" alt="search-icon">
+                        </span>
+                        <input type="search" name="" id="" placeholder="Search Deals, Brands">
+                    </div>
+
+                    <div class="topbar-right" style="display:flex;align-items:center;gap:12px;">
+                        <div class="menu_buttons" style="align-items:center;">
+                            <a href="javascript:void(0)" title="Deal Alerts">
+                                <img src="./assets/img/notification-icon.svg" alt="Deal Alerts">
+                                <p>Deal Alerts</p>
+                            </a>
+                            <a href="javascript:void(0)" title="Wishlist">
+                                <img src="./assets/img/wishlist-icon.svg" alt="Wishlist">
+                                <p>Wishlist</p>
+                            </a>
+                            <a href="./sign-in.html" title="Sign In">
+                                <img src="./assets/img/sign-in-icon.svg" alt="Sign In">
+                                <p>Sign In</p>
+                            </a>
+                        </div>
+
+                        <button class="hamburger_btn" aria-label="Open menu">☰</button>
+                    </div>
+                </div>
+
+                <div class="mobile-search" aria-hidden="false">
+                    <div class="global_searchbar">
+                        <span class="search-icon-wrapper"><img src="./assets/img/search-icon.svg" alt="search"></span>
+                        <input type="search" placeholder="Search Deals, Brands" aria-label="Search">
+                    </div>
+                </div>
+
+                <div class="header_menus">
+                    <a href="./category.html" class="menu_box" title="Health & Beauty">
+                        <img src="./assets/img/health-beauty-icon.svg" alt="Health & Beauty">
+                        <p>Health & Beauty</p>
+                    </a>
+                    <a class="menu_box" title="Home & Kitchen">
+                        <img src="./assets/img/home-kitchen-icon.svg" alt="Home & Kitchen">
+                        <p>Home & Kitchen</p>
+                    </a>
+                    <a class="menu_box" title="Grocery & Beverages">
+                        <img src="./assets/img/groceries-icon.svg" alt="Grocery & Beverages">
+                        <p>Grocery & Beverages</p>
+                    </a>
+                    <a class="menu_box" title="Electronics">
+                        <img src="./assets/img/electronics-icon.svg" alt="Electronics">
+                        <p>Electronics</p>
+                    </a>
+                    <a class="menu_box" title="Fashion">
+                        <img src="./assets/img/ffashion-icon.svg" alt="Fashion">
+                        <p>Fashion</p>
+                    </a>
+                    <a class="menu_box" title="Pets">
+                        <img src="./assets/img/pets-icon.svg" alt="Pets">
+                        <p>Pets</p>
+                    </a>
+                    <a href="./all-categories.html" class="menu_box" title="All Categories">
+                        <img src="./assets/img/all-categories-icon.svg" alt="All Categories">
+                        <p>All Categories</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overlay and Drawer -->
+        <div class="drawer-overlay" aria-hidden="true"></div>
+
+        <aside class="drawer" role="dialog" aria-label="Main menu" aria-hidden="true">
+            <div class="drawer-inner">
+                <div class="drawer-header">
+                    <h2>Categories</h2>
+                    <button class="drawer-close" aria-label="Close menu">&times;</button>
+                </div>
+
+                <div class="drawer-body">
+                    <ul class="drawer-menu">
+                        <!-- All Categories 1 -->
+                        <li class="menu-item">
+                            <button class="menu-link">
+                                <img class="icon" src="./assets/img/all-categories-icon.svg" alt="">
+                                <span class="title">All Categories</span>
+                            </button>
+                        </li>
+
+                        <!-- Health & Beauty 2 -->
+                        <li class="menu-item has-sub">
+                            <button class="menu-link" aria-expanded="false">
+                                <img class="icon" src="./assets/img/health-beauty-icon.svg" alt="">
+                                <span class="title">Health & Beauty</span>
+                                <span class="chev"><img src="./assets/img/keyboard_arrow_down.svg" alt="keyboard_arrow_down"></span>
+                            </button>
+                            <ul class="submenu">
+                                <li>Skincare</li>
+                                <li>Makeup</li>
+                                <li>Personal Care</li>
+                                <li>Supplements</li>
+                            </ul>
+                        </li>
+
+                        <!-- Home & Kitchen 3 -->
+                        <li class="menu-item has-sub">
+                            <button class="menu-link" aria-expanded="false">
+                                <img class="icon" src="./assets/img/home-kitchen-icon.svg" alt="">
+                                <span class="title">Home & Kitchen</span>
+                                <span class="chev"><img src="./assets/img/keyboard_arrow_down.svg" alt="keyboard_arrow_down"></span>
+                            </button>
+                            <ul class="submenu">
+                                <li>Cookware</li>
+                                <li>Air Fryers</li>
+                                <li>Bedding</li>
+                                <li>Cleaning Supplies</li>
+                                <li>Storage & Organization</li>
+                                <li>Home Decor</li>
+                                <li>Furniture</li>
+                                <li>Lighting</li>
+                                <li>Kitchen Tools</li>
+                                <li>Small Appliances</li>
+                            </ul>
+                        </li>
+
+                        <!-- Grocery & Beverages 4 -->
+                        <li class="menu-item has-sub">
+                            <button class="menu-link" aria-expanded="false">
+                                <img class="icon" src="./assets/img/groceries-icon.svg" alt="Grocery & Beverages">
+                                <span class="title">Grocery & Beverages</span>
+                                <span class="chev"><img src="./assets/img/keyboard_arrow_down.svg" alt="keyboard_arrow_down"></span>
+                            </button>
+                            <ul class="submenu">
+                                <li>Cookware</li>
+                                <li>Air Fryers</li>
+                                <li>Bedding</li>
+                                <li>Cleaning Supplies</li>
+                                <li>Storage & Organization</li>
+                                <li>Home Decor</li>
+                                <li>Furniture</li>
+                                <li>Lighting</li>
+                                <li>Kitchen Tools</li>
+                                <li>Small Appliances</li>
+                            </ul>
+                        </li>
+
+                        <!-- Electronics 5 -->
+                        <li class="menu-item has-sub">
+                            <button class="menu-link" aria-expanded="false">
+                                <img class="icon" src="./assets/img/electronics-icon.svg" alt="Electronics">
+                                <span class="title">Electronics</span>
+                                <span class="chev"><img src="./assets/img/keyboard_arrow_down.svg" alt="keyboard_arrow_down"></span>
+                            </button>
+                            <ul class="submenu">
+                                <li>Cookware</li>
+                                <li>Air Fryers</li>
+                                <li>Bedding</li>
+                            </ul>
+                        </li>
+
+                        <!-- Baby & Kids 6 -->
+                        <li class="menu-item has-sub">
+                            <button class="menu-link" aria-expanded="false">
+                                <img class="icon" src="./assets/img/explore-baby-icon.svg" alt="Baby & Kids">
+                                <span class="title">Baby & Kids</span>
+                                <span class="chev"><img src="./assets/img/keyboard_arrow_down.svg" alt="keyboard_arrow_down"></span>
+                            </button>
+                            <ul class="submenu">
+                                <li>Cookware</li>
+                                <li>Air Fryers</li>
+                                <li>Bedding</li>
+                            </ul>
+                        </li>
+
+                        <!-- Fashion 7 -->
+                        <li class="menu-item has-sub">
+                            <button class="menu-link" aria-expanded="false">
+                                <img class="icon" src="./assets/img/ffashion-icon.svg" alt="Fashion">
+                                <span class="title">Fashion</span>
+                                <span class="chev"><img src="./assets/img/keyboard_arrow_down.svg" alt="keyboard_arrow_down"></span>
+                            </button>
+                            <ul class="submenu">
+                                <li>Cookware</li>
+                                <li>Air Fryers</li>
+                                <li>Bedding</li>
+                            </ul>
+                        </li>
+
+                        <!-- Pets 8 -->
+                        <li class="menu-item has-sub">
+                            <button class="menu-link" aria-expanded="false">
+                                <img class="icon" src="./assets/img/pets-icon.svg" alt="Pets">
+                                <span class="title">Pets</span>
+                                <span class="chev"><img src="./assets/img/keyboard_arrow_down.svg" alt="keyboard_arrow_down"></span>
+                            </button>
+                            <ul class="submenu">
+                                <li>Cookware</li>
+                                <li>Air Fryers</li>
+                                <li>Bedding</li>
+                            </ul>
+                        </li>
+
+                        <!-- Office & School 9 -->
+                        <li class="menu-item has-sub">
+                            <button class="menu-link" aria-expanded="false">
+                                <img class="icon" src="./assets/img/office-school-icon.svg" alt="Office & School">
+                                <span class="title">Office & School</span>
+                                <span class="chev"><img src="./assets/img/keyboard_arrow_down.svg" alt="keyboard_arrow_down"></span>
+                            </button>
+                            <ul class="submenu">
+                                <li>Cookware</li>
+                                <li>Air Fryers</li>
+                                <li>Bedding</li>
+                            </ul>
+                        </li>
+
+                        <!-- Automotive & Tools 10 -->
+                        <li class="menu-item has-sub">
+                            <button class="menu-link" aria-expanded="false">
+                                <img class="icon" src="./assets/img/explore-automotive-icon.svg" alt="Automotive & Tools">
+                                <span class="title">Automotive & Tools</span>
+                                <span class="chev"><img src="./assets/img/keyboard_arrow_down.svg" alt="keyboard_arrow_down"></span>
+                            </button>
+                            <ul class="submenu">
+                                <li>Cookware</li>
+                                <li>Air Fryers</li>
+                                <li>Bedding</li>
+                            </ul>
+                        </li>
+
+                        <!-- Sports & Outdoors 11 -->
+                        <li class="menu-item has-sub">
+                            <button class="menu-link" aria-expanded="false">
+                                <img class="icon" src="./assets/img/explore-sports-icon.svg" alt="Sports & Outdoors">
+                                <span class="title">Sports & Outdoors</span>
+                                <span class="chev"><img src="./assets/img/keyboard_arrow_down.svg" alt="keyboard_arrow_down"></span>
+                            </button>
+                            <ul class="submenu">
+                                <li>Cookware</li>
+                                <li>Air Fryers</li>
+                                <li>Bedding</li>
+                            </ul>
+                        </li>
+
+                        <!-- Toys & Games 12 -->
+                        <li class="menu-item has-sub">
+                            <button class="menu-link" aria-expanded="false">
+                                <img class="icon" src="./assets/img/toy-game-icon.svg" alt="Toys & Games">
+                                <span class="title">Toys & Games</span>
+                                <span class="chev"><img src="./assets/img/keyboard_arrow_down.svg" alt="keyboard_arrow_down"></span>
+                            </button>
+                            <ul class="submenu">
+                                <li>Cookware</li>
+                                <li>Air Fryers</li>
+                                <li>Bedding</li>
+                            </ul>
+                        </li>
+
+                        <li class="spacer" style="height: 12px;"></li>
+                    </ul>
+                </div>
+
+                <div class="drawer-footer">
+                    <a href="javascript:void(0)" title="Deal Alerts">
+                        <img src="./assets/img/notification-icon.svg" alt="" style="width:18px;height:18px;">
+                        <span>Deal Alerts</span>
+                    </a>
+                    <a href="javascript:void(0)" title="Wishlist">
+                        <img src="./assets/img/wishlist-icon.svg" alt="" style="width:18px;height:18px;">
+                        <span>Wishlist</span>
+                    </a>
+                    <a href="./sign-in.html" title="Sign In">
+                        <img src="./assets/img/sign-in-icon.svg" alt="" style="width:18px;height:18px;">
+                        <span>Sign In</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- mobile hamburger menu -->
+        <script>
+            (function () {
+                const openBtn = document.querySelector('.hamburger_btn');
+                const drawer = document.querySelector('.drawer');
+                const overlay = document.querySelector('.drawer-overlay');
+                const closeBtn = document.querySelector('.drawer-close');
+                const body = document.body;
+                function openDrawer() { drawer.classList.add('open'); overlay.classList.add('active'); drawer.setAttribute('aria-hidden', 'false'); overlay.setAttribute('aria-hidden', 'false'); body.classList.add('no-scroll'); }
+                function closeDrawer() {
+                    drawer.classList.remove('open');
+                    overlay.classList.remove('active');
+                    drawer.setAttribute('aria-hidden', 'true');
+                    overlay.setAttribute('aria-hidden', 'true');
+                    body.classList.remove('no-scroll');
+                    document.querySelectorAll('.menu-item.open').forEach(mi => { mi.classList.remove('open'); const submenu = mi.querySelector('.submenu'); if (submenu) submenu.style.maxHeight = null; const btn = mi.querySelector('.menu-link'); if (btn) btn.setAttribute('aria-expanded', 'false'); });
+                }
+                openBtn && openBtn.addEventListener('click', openDrawer);
+                closeBtn && closeBtn.addEventListener('click', closeDrawer);
+                overlay && overlay.addEventListener('click', closeDrawer);
+                document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && drawer.classList.contains('open')) { closeDrawer(); } });
+                document.querySelectorAll('.menu-item.has-sub').forEach(item => {
+                    const btn = item.querySelector('.menu-link');
+                    const submenu = item.querySelector('.submenu');
+                    if (submenu) submenu.style.maxHeight = null;
+                    btn.addEventListener('click', (ev) => {
+                        const isOpen = item.classList.toggle('open');
+                        btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                        if (isOpen) { submenu.style.maxHeight = submenu.scrollHeight + 'px'; }
+                        else { submenu.style.maxHeight = '0'; }
+                    });
+                });
+                window.addEventListener('resize', () => { if (window.innerWidth > 900 && drawer.classList.contains('open')) { closeDrawer(); } });
+            })();
+        </script>
+    </body>
+</html>

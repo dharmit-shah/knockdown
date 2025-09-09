@@ -60,34 +60,85 @@
                 </div>
 
                 <div class="header_menus">
-                    <a href="./category.html" class="menu_box" title="Health & Beauty">
-                        <img src="./assets/img/health-beauty-icon.svg" alt="Health & Beauty">
-                        <p>Health & Beauty</p>
-                    </a>
-                    <a class="menu_box" title="Home & Kitchen">
-                        <img src="./assets/img/home-kitchen-icon.svg" alt="Home & Kitchen">
-                        <p>Home & Kitchen</p>
-                    </a>
-                    <a class="menu_box" title="Grocery & Beverages">
-                        <img src="./assets/img/groceries-icon.svg" alt="Grocery & Beverages">
-                        <p>Grocery & Beverages</p>
-                    </a>
-                    <a class="menu_box" title="Electronics">
-                        <img src="./assets/img/electronics-icon.svg" alt="Electronics">
-                        <p>Electronics</p>
-                    </a>
-                    <a class="menu_box" title="Fashion">
-                        <img src="./assets/img/ffashion-icon.svg" alt="Fashion">
-                        <p>Fashion</p>
-                    </a>
-                    <a class="menu_box" title="Pets">
-                        <img src="./assets/img/pets-icon.svg" alt="Pets">
-                        <p>Pets</p>
-                    </a>
-                    <a href="./all-categories.html" class="menu_box" title="All Categories">
-                        <img src="./assets/img/all-categories-icon.svg" alt="All Categories">
-                        <p>All Categories</p>
-                    </a>
+                    <div class="menu_box" title="Health & Beauty">
+                        <a href="./category.html" class="d-flex gap-2 align-items-center" title="Health & Beauty">
+                            <img src="./assets/img/health-beauty-icon.svg" alt="Health & Beauty">
+                            <p>Health & Beauty</p>
+                        </a>
+                    </div>
+
+                    <div class="menu_box" title="Home & Kitchen">
+                        <a href="javascript:void(0)" class="d-flex gap-2 align-items-center" title="Home & Kitchen">
+                            <img src="./assets/img/home-kitchen-icon.svg" alt="Home & Kitchen">
+                            <p>Home & Kitchen</p>
+                        </a>
+
+                        <!-- Mega Menu -->
+                        <div class="mega_menu">
+                            <div class="mega_menu_title">
+                                <img src="./assets/img/home-kitchen-icon.svg" alt="">
+                                <h4>Home & Kitchen</h4>
+                            </div>
+                            <div style="display: flex; gap: 40px;">
+
+                                <div class="mega_col">
+                                    <a href="javascript:void(0)" title="Cookware">Cookware</a>
+                                    <a href="javascript:void(0)" title="Air Fryers">Air Fryers</a>
+                                    <a href="javascript:void(0)" title="Bedding">Bedding</a>
+                                    <a href="javascript:void(0)" title="Cleaning Supplies">Cleaning Supplies</a>
+                                </div>
+
+                                <div class="mega_col">
+                                    <a href="javascript:void(0)" title="Storage & Organization">Storage & Organization</a>
+                                    <a href="javascript:void(0)" title="Home Decor">Home Decor</a>
+                                    <a href="javascript:void(0)" title="Furniture">Furniture</a>
+                                    <a href="javascript:void(0)" title="Lighting">Lighting</a>
+                                </div>
+
+                                <div class="mega_col">
+                                    <a href="javascript:void(0)" title="Kitchen Tools">Kitchen Tools</a>
+                                    <a href="javascript:void(0)" title="Small Appliances">Small Appliances</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu_box" title="Grocery & Beverages">
+                        <a href="javascript:void(0)" class="d-flex gap-2 align-items-center" title="Grocery & Beverages">
+                            <img src="./assets/img/groceries-icon.svg" alt="Grocery & Beverages">
+                            <p>Grocery & Beverages</p>
+                        </a>
+                    </div>
+
+                    <div class="menu_box" title="Electronics">
+                        <a href="javascript:void(0)" class="d-flex gap-2 align-items-center" title="Electronics">
+                            <img src="./assets/img/electronics-icon.svg" alt="Electronics">
+                            <p>Electronics</p>
+                        </a>
+                    </div>
+
+                    <div class="menu_box" title="Fashion">
+                        <a href="javascript:void(0)" class="d-flex gap-2 align-items-center" title="Fashion">
+                            <img src="./assets/img/ffashion-icon.svg" alt="Fashion">
+                            <p>Fashion</p>
+                        </a>
+                    </div>
+
+                    <div class="menu_box" title="Pets">
+                        <a href="javascript:void(0)" class="d-flex gap-2 align-items-center" title="Pets">
+                            <img src="./assets/img/pets-icon.svg" alt="Pets">
+                            <p>Pets</p>
+                        </a>
+                    </div>
+
+                    <div class="menu_box" title="All Categories">
+                        <a href="./all-categories.html" class="d-flex gap-2 align-items-center" title="All Categories">
+                            <img src="./assets/img/all-categories-icon.svg" alt="All Categories">
+                            <p>All Categories</p>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -336,6 +387,46 @@
                 });
                 window.addEventListener('resize', () => { if (window.innerWidth > 900 && drawer.classList.contains('open')) { closeDrawer(); } });
             })();
+        </script>
+
+        <!-- desktop Mega menu -->
+        <script>
+            document.querySelectorAll('.menu_box').forEach(menu => {
+                let timer;
+
+                if (window.innerWidth >= 766) {
+                    const megaMenu = menu.querySelector('.mega_menu');
+
+                    menu.addEventListener('mouseenter', () => {
+                        clearTimeout(timer);
+                        timer = setTimeout(() => {
+                            menu.classList.add('show');
+                        }, 200); // delay for opening
+                    });
+
+                    menu.addEventListener('mouseleave', () => {
+                        clearTimeout(timer);
+                        timer = setTimeout(() => {
+                            menu.classList.remove('show');
+                        }, 400); // delay for closing
+                    });
+
+                    // 👇 Keep menu open while hovering inside mega menu
+                    if (megaMenu) {
+                        megaMenu.addEventListener('mouseenter', () => {
+                            clearTimeout(timer);
+                            menu.classList.add('show');
+                        });
+                        megaMenu.addEventListener('mouseleave', () => {
+                            clearTimeout(timer);
+                            timer = setTimeout(() => {
+                                menu.classList.remove('show');
+                            }, 400);
+                        });
+                    }
+                }
+            });
+
         </script>
     </body>
 </html>

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>KnockDown Home Page</title>
 
         <!-- Master Pages -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
@@ -51,9 +51,10 @@
                             <img src="./assets/img/deal-4.png" alt="Deal Thumbnail">
                         </div>
                         <div class="deal_product_img">
-                            <img src="./assets/img/deal-main-img.svg" alt="Deal Image">
+                            <img id="mainProductImage" src="./assets/img/deal-main-img.svg" alt="Deal Image">
                         </div>
                     </div>
+
                     <div class="product_description_box">
                         <div class="product_title">
                             <p>Dreamegg</p>
@@ -86,8 +87,9 @@
             </div>
         </div>
 
+        <!-- All Products -->
         <section class="products_slider_component">
-            
+
             <!-- Health & Beauty -->
             <div class="hero_product_component">
                 <div class="hero_product_title">
@@ -430,10 +432,1101 @@
                 </div>
             </div>
 
+            <!-- Electronics -->
+            <div class="hero_product_component">
+                <div class="hero_product_title">
+                    <div class="hero_track">
+                        <img src="./assets/img/electronics-icon.svg" alt="electronics-icon">
+                        <h4>Electronics</h4>
+                    </div>
+                    <a href="javascript:void(0)" class="see_more_product_btn" title="See more">See more</a>
+                </div>
+
+                <div class="electronics_kitchen_slider">
+                    <div class="electronics_kitchen_product_list">
+                        <!-- 1 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/electronics-product-1.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="Biotin 10000mcg 120 Capsules" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Solgar</p>
+                                    <h4 class="product_name">Biotin 10000mcg 120 Capsules</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$17</p>
+                                    <p class="cutout_price">$24</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/electronics-product-2.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="Oatmeal and Almond Bar Soap, 4 Ounce" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Yardley</p>
+                                    <h4 class="product_name">Oatmeal and Almond Bar Soap, 4 Ounce</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$0.85</p>
+                                    <p class="cutout_price">$2.29</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/electronics-product-3.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="3-Pack 10-Oz Foaming Hand Soap (Pink Grapefruit)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Method</p>
+                                    <h4 class="product_name">3-Pack 10-Oz Foaming Hand Soap (Pink Grapefruit)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$6.60</p>
+                                    <p class="cutout_price">$11</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/electronics-product-4.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="Black Series Ultra Whitening Toothbrush, 8 Brush Heads+Travel Case" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Solgar</p>
+                                    <h4 class="product_name">Black Series Ultra Whitening Toothbrush, 8 Brush Heads+Travel Case</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$30</p>
+                                    <p class="cutout_price">$50</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/electronics-product-5.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Huel</p>
+                                    <h4 class="product_name">12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$22</p>
+                                    <p class="cutout_price">$39</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/health-product-5.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Huel</p>
+                                    <h4 class="product_name">12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$22</p>
+                                    <p class="cutout_price">$39</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 7 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/health-product-5.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Huel</p>
+                                    <h4 class="product_name">12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$22</p>
+                                    <p class="cutout_price">$39</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <button class="electronics-slider-arrow" title="Next"><img src="./assets/img/arrow_forward.svg" alt="Next"></button>
+                </div>
+            </div>
+
+            <!-- Grocery & Beverages -->
+            <div class="hero_product_component">
+                <div class="hero_product_title">
+                    <div class="hero_track">
+                        <img src="./assets/img/groceries-icon.svg" alt="home-kitchen-icon">
+                        <h4>Groceries</h4>
+                    </div>
+                    <a href="javascript:void(0)" class="see_more_product_btn" title="See more">See more</a>
+                </div>
+
+                <div class="grocery_kitchen_slider">
+                    <div class="grocery_kitchen_product_list">
+                        <!-- 1 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/groceries-product-1.png" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="Biotin 10000mcg 120 Capsules" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Solgar</p>
+                                    <h4 class="product_name">Biotin 10000mcg 120 Capsules</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$17</p>
+                                    <p class="cutout_price">$24</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/groceries-product-2.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="Oatmeal and Almond Bar Soap, 4 Ounce" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Yardley</p>
+                                    <h4 class="product_name">Oatmeal and Almond Bar Soap, 4 Ounce</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$0.85</p>
+                                    <p class="cutout_price">$2.29</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/groceries-product-3.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="3-Pack 10-Oz Foaming Hand Soap (Pink Grapefruit)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Method</p>
+                                    <h4 class="product_name">3-Pack 10-Oz Foaming Hand Soap (Pink Grapefruit)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$6.60</p>
+                                    <p class="cutout_price">$11</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/groceries-product-4.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="Black Series Ultra Whitening Toothbrush, 8 Brush Heads+Travel Case" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Solgar</p>
+                                    <h4 class="product_name">Black Series Ultra Whitening Toothbrush, 8 Brush Heads+Travel Case</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$30</p>
+                                    <p class="cutout_price">$50</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/groceries-product-5.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Huel</p>
+                                    <h4 class="product_name">12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$22</p>
+                                    <p class="cutout_price">$39</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/health-product-5.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Huel</p>
+                                    <h4 class="product_name">12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$22</p>
+                                    <p class="cutout_price">$39</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 7 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/health-product-5.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Huel</p>
+                                    <h4 class="product_name">12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$22</p>
+                                    <p class="cutout_price">$39</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <button class="grocery-slider-arrow" title="Next"><img src="./assets/img/arrow_forward.svg" alt="Next"></button>
+                </div>
+            </div>
+
+            <!-- Fashion -->
+            <div class="hero_product_component">
+                <div class="hero_product_title">
+                    <div class="hero_track">
+                        <img src="./assets/img/ffashion-icon.svg" alt="fashion-icon">
+                        <h4>Fashion</h4>
+                    </div>
+                    <a href="javascript:void(0)" class="see_more_product_btn" title="See more">See more</a>
+                </div>
+
+                <div class="fashion_kitchen_slider">
+                    <div class="fashion_kitchen_product_list">
+                        <!-- 1 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/fashion-product-1.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="Biotin 10000mcg 120 Capsules" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Solgar</p>
+                                    <h4 class="product_name">Biotin 10000mcg 120 Capsules</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$17</p>
+                                    <p class="cutout_price">$24</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/fashion-product-2.png" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="Oatmeal and Almond Bar Soap, 4 Ounce" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Yardley</p>
+                                    <h4 class="product_name">Oatmeal and Almond Bar Soap, 4 Ounce</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$0.85</p>
+                                    <p class="cutout_price">$2.29</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/fashion-product-3.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="3-Pack 10-Oz Foaming Hand Soap (Pink Grapefruit)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Method</p>
+                                    <h4 class="product_name">3-Pack 10-Oz Foaming Hand Soap (Pink Grapefruit)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$6.60</p>
+                                    <p class="cutout_price">$11</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/fashion-product-4.png" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="Black Series Ultra Whitening Toothbrush, 8 Brush Heads+Travel Case" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Solgar</p>
+                                    <h4 class="product_name">Black Series Ultra Whitening Toothbrush, 8 Brush Heads+Travel Case</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$30</p>
+                                    <p class="cutout_price">$50</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/fashion-product-5.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Huel</p>
+                                    <h4 class="product_name">12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$22</p>
+                                    <p class="cutout_price">$39</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/health-product-5.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Huel</p>
+                                    <h4 class="product_name">12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$22</p>
+                                    <p class="cutout_price">$39</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 7 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/health-product-5.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Huel</p>
+                                    <h4 class="product_name">12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$22</p>
+                                    <p class="cutout_price">$39</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <button class="fashion-slider-arrow" title="Next"><img src="./assets/img/arrow_forward.svg" alt="Next"></button>
+                </div>
+            </div>
+
+            <!-- Pets -->
+            <div class="hero_product_component">
+                <div class="hero_product_title">
+                    <div class="hero_track">
+                        <img src="./assets/img/pets-icon.svg" alt="pets-icon">
+                        <h4>Pets</h4>
+                    </div>
+                    <a href="javascript:void(0)" class="see_more_product_btn" title="See more">See more</a>
+                </div>
+
+                <div class="pets_kitchen_slider">
+                    <div class="pets_kitchen_product_list">
+                        <!-- 1 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/pets-product-1.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="Biotin 10000mcg 120 Capsules" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Solgar</p>
+                                    <h4 class="product_name">Biotin 10000mcg 120 Capsules</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$17</p>
+                                    <p class="cutout_price">$24</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/pets-product-2.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="Oatmeal and Almond Bar Soap, 4 Ounce" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Yardley</p>
+                                    <h4 class="product_name">Oatmeal and Almond Bar Soap, 4 Ounce</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$0.85</p>
+                                    <p class="cutout_price">$2.29</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/pets-product-3.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="3-Pack 10-Oz Foaming Hand Soap (Pink Grapefruit)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Method</p>
+                                    <h4 class="product_name">3-Pack 10-Oz Foaming Hand Soap (Pink Grapefruit)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$6.60</p>
+                                    <p class="cutout_price">$11</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/pets-product-4.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="Black Series Ultra Whitening Toothbrush, 8 Brush Heads+Travel Case" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Solgar</p>
+                                    <h4 class="product_name">Black Series Ultra Whitening Toothbrush, 8 Brush Heads+Travel Case</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$30</p>
+                                    <p class="cutout_price">$50</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/pets-product-5.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Huel</p>
+                                    <h4 class="product_name">12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$22</p>
+                                    <p class="cutout_price">$39</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/health-product-5.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Huel</p>
+                                    <h4 class="product_name">12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$22</p>
+                                    <p class="cutout_price">$39</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <button class="pets-slider-arrow" title="Next"><img src="./assets/img/arrow_forward.svg" alt="Next"></button>
+                </div>
+            </div>
+
+            <!-- Baby & Kids -->
+            <div class="hero_product_component">
+                <div class="hero_product_title">
+                    <div class="hero_track">
+                        <img src="./assets/img/explore-baby-icon.svg" alt="baby-icon">
+                        <h4>Baby & Kids</h4>
+                    </div>
+                    <a href="javascript:void(0)" class="see_more_product_btn" title="See more">See more</a>
+                </div>
+
+                <div class="baby_kitchen_slider">
+                    <div class="baby_kitchen_product_list">
+                        <!-- 1 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/babykids-product-1.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="Biotin 10000mcg 120 Capsules" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Solgar</p>
+                                    <h4 class="product_name">Biotin 10000mcg 120 Capsules</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$17</p>
+                                    <p class="cutout_price">$24</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/babykids-product-2.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="Oatmeal and Almond Bar Soap, 4 Ounce" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Yardley</p>
+                                    <h4 class="product_name">Oatmeal and Almond Bar Soap, 4 Ounce</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$0.85</p>
+                                    <p class="cutout_price">$2.29</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/babykids-product-3.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="3-Pack 10-Oz Foaming Hand Soap (Pink Grapefruit)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Method</p>
+                                    <h4 class="product_name">3-Pack 10-Oz Foaming Hand Soap (Pink Grapefruit)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$6.60</p>
+                                    <p class="cutout_price">$11</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/babykids-product-4.png" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="Black Series Ultra Whitening Toothbrush, 8 Brush Heads+Travel Case" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Solgar</p>
+                                    <h4 class="product_name">Black Series Ultra Whitening Toothbrush, 8 Brush Heads+Travel Case</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$30</p>
+                                    <p class="cutout_price">$50</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/babykids-product-5.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Huel</p>
+                                    <h4 class="product_name">12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$22</p>
+                                    <p class="cutout_price">$39</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/health-product-5.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Huel</p>
+                                    <h4 class="product_name">12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$22</p>
+                                    <p class="cutout_price">$39</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <button class="baby-slider-arrow" title="Next"><img src="./assets/img/arrow_forward.svg" alt="Next"></button>
+                </div>
+            </div>
+
+            <!-- Automotive & Tools -->
+            <div class="hero_product_component">
+                <div class="hero_product_title">
+                    <div class="hero_track">
+                        <img src="./assets/img/explore-automotive-icon.svg" alt="home-kitchen-icon">
+                        <h4>Automotive & Tools</h4>
+                    </div>
+                    <a href="javascript:void(0)" class="see_more_product_btn" title="See more">See more</a>
+                </div>
+
+                <div class="automotive_kitchen_slider">
+                    <div class="automotive_kitchen_product_list">
+                        <!-- 1 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/automotive-product-1.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="Biotin 10000mcg 120 Capsules" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Solgar</p>
+                                    <h4 class="product_name">Biotin 10000mcg 120 Capsules</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$17</p>
+                                    <p class="cutout_price">$24</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/automotive-product-2.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="Oatmeal and Almond Bar Soap, 4 Ounce" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Yardley</p>
+                                    <h4 class="product_name">Oatmeal and Almond Bar Soap, 4 Ounce</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$0.85</p>
+                                    <p class="cutout_price">$2.29</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/automotive-product-3.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="3-Pack 10-Oz Foaming Hand Soap (Pink Grapefruit)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Method</p>
+                                    <h4 class="product_name">3-Pack 10-Oz Foaming Hand Soap (Pink Grapefruit)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$6.60</p>
+                                    <p class="cutout_price">$11</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/automotive-product-4.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="Black Series Ultra Whitening Toothbrush, 8 Brush Heads+Travel Case" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Solgar</p>
+                                    <h4 class="product_name">Black Series Ultra Whitening Toothbrush, 8 Brush Heads+Travel Case</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$30</p>
+                                    <p class="cutout_price">$50</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/automotive-product-5.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Huel</p>
+                                    <h4 class="product_name">12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$22</p>
+                                    <p class="cutout_price">$39</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/health-product-5.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Huel</p>
+                                    <h4 class="product_name">12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$22</p>
+                                    <p class="cutout_price">$39</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 7 -->
+                        <div class="product_cards">
+                            <div class="product_img">
+                                <div class="product_tag">
+                                    <img src="./assets/img/cart-icon.svg" alt="cart">
+                                    <p>Walmart</p>
+                                </div>
+                                <img src="./assets/img/health-product-5.svg" alt="Product Image">
+                            </div>
+                            <a href="javascript:void(0)" title="12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)" class="product_details">
+                                <div class="product_title_box">
+                                    <p class="product_category">Huel</p>
+                                    <h4 class="product_name">12-Pk 16.9-Oz Meal Replacement Drink (Chocolate)</h4>
+                                </div>
+                                <div class="product_price">
+                                    <p class="real_price">$22</p>
+                                    <p class="cutout_price">$39</p>
+                                    <p class="discount_price">55% off</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <button class="automotive-slider-arrow" title="Next"><img src="./assets/img/arrow_forward.svg" alt="Next"></button>
+                </div>
+            </div>
+
         </section>
+
+        <!-- Good Deal -->
+        <section class="good_deal_component">
+            <img src="./assets/img/good-deal-desktop-img.svg" alt="" class="good_deal_desktop">
+            <img src="./assets/img/good-deal-mobile-img.svg" alt="" class="good_deal_mobile">
+        </section>
+
+        <!-- Explore All Categories -->
+        <div class="Home_all_category_component">
+            <!-- Explore All Categories -->
+            <div class="explore_product_component">
+                <div class="explore_category_title">
+                    <div class="hero_track">
+                        <h4>Explore All Categories</h4>
+                    </div>
+                    <a href="javascript:void(0)" class="see_more_product_btn" title="See more">See more</a>
+                </div>
+
+                <div class="all_category_slider">
+                    <div class="all_category_product_list">
+                        <!-- 1 -->
+                        <div class="explore_cards">
+                            <img src="./assets/img/explore-health-icon.svg" alt="Product Image">
+                            <a href="javascript:void(0)" title="Health & Beauty" class="">
+                                <h6>Health & <br> Beauty</h6>
+                            </a>
+                        </div>
+                        <!-- 2 -->
+                        <div class="explore_cards">
+                            <img src="./assets/img/explore-home-icon.svg" alt="Product Image">
+                            <a href="javascript:void(0)" title="Home & Kitchen" class="">
+                                <h6>Home & <br> Kitchen</h6>
+                            </a>
+                        </div>
+                        <!-- 3 -->
+                        <div class="explore_cards">
+                            <img src="./assets/img/explore-grocery-icon.svg" alt="Product Image">
+                            <a href="javascript:void(0)" title="Grocery & Beverages" class="">
+                                <h6>Grocery & <br> Beverages</h6>
+                            </a>
+                        </div>
+                        <!-- 4 -->
+                        <div class="explore_cards">
+                            <img src="./assets/img/explore-baby-icon.svg" alt="Product Image">
+                            <a href="javascript:void(0)" title="Baby & Kids" class="">
+                                <h6>Baby & <br> Kids</h6>
+                            </a>
+                        </div>
+                        <!-- 5 -->
+                        <div class="explore_cards">
+                            <img src="./assets/img/explore-fashion-icon.svg" alt="Product Image">
+                            <a href="javascript:void(0)" title="Fashion" class="">
+                                <h6>Fashion</h6>
+                            </a>
+                        </div>
+                        <!-- 6 -->
+                        <div class="explore_cards">
+                            <img src="./assets/img/explore-electronics-icon.svg" alt="Product Image">
+                            <a href="javascript:void(0)" title="Electronics" class="">
+                                <h6>Electronics</h6>
+                            </a>
+                        </div>
+                        <!-- 7 -->
+                        <div class="explore_cards">
+                            <img src="./assets/img/explore-sports-icon.svg" alt="Product Image">
+                            <a href="javascript:void(0)" title="Sports & Outdoors" class="">
+                                <h6>Sports & <br> Outdoors</h6>
+                            </a>
+                        </div>
+                        <!-- 8 -->
+                        <div class="explore_cards">
+                            <img src="./assets/img/explore-pets-icon.svg" alt="Product Image">
+                            <a href="javascript:void(0)" title="Pets" class="">
+                                <h6>Pets</h6>
+                            </a>
+                        </div>
+                        <!-- 9 -->
+                        <div class="explore_cards">
+                            <img src="./assets/img/explore-automotive-icon.svg" alt="Product Image">
+                            <a href="javascript:void(0)" title="Automotive & Tools" class="">
+                                <h6>Automotive & <br> Tools</h6>
+                            </a>
+                        </div>
+                        <!-- 10 -->
+                        <div class="explore_cards">
+                            <img src="./assets/img/explore-health-icon.svg" alt="Product Image">
+                            <a href="javascript:void(0)" title="Health & Beauty" class="">
+                                <h6>Health & <br> Beauty</h6>
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <button class="all-category-slider-arrow" title="Next"><img src="./assets/img/arrow_forward.svg" alt="Next"></button>
+                </div>
+            </div>
+        </div>
 
         <!-- footer -->
         <div id="footer"></div>
+
+        <!-- Product Thumbnail -->
+        <script>
+            const thumbnails = document.querySelectorAll('.product_thumbnail img');
+            const mainImage = document.getElementById('mainProductImage');
+
+            thumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', () => {
+                    mainImage.src = thumbnail.src;
+                });
+            });
+        </script>
 
         <!-- Product slider JS -->
         <script>
@@ -448,6 +1541,49 @@
             const arrowHome = document.querySelector('.home-slider-arrow');
             const cardHome = document.querySelector('.product_cards');
             arrowHome.addEventListener('click', () => { const cardWidth = cardHome.offsetWidth + 24; sliderHome.scrollBy({ left: cardWidth, behavior: 'smooth' }); });
+
+            // Electronics
+            const sliderElectronics = document.querySelector('.electronics_kitchen_product_list');
+            const arrowElectronics = document.querySelector('.electronics-slider-arrow');
+            const cardElectronics = document.querySelector('.product_cards');
+            arrowElectronics.addEventListener('click', () => { const cardWidth = cardElectronics.offsetWidth + 24; sliderElectronics.scrollBy({ left: cardWidth, behavior: 'smooth' }); });
+
+            // Grocery & Beverages
+            const sliderGrocery = document.querySelector('.grocery_kitchen_product_list');
+            const arrowGrocery = document.querySelector('.grocery-slider-arrow');
+            const cardGrocery = document.querySelector('.product_cards');
+            arrowGrocery.addEventListener('click', () => { const cardWidth = cardGrocery.offsetWidth + 24; sliderGrocery.scrollBy({ left: cardWidth, behavior: 'smooth' }); });
+
+            // Fashion
+            const sliderFashion = document.querySelector('.fashion_kitchen_product_list');
+            const arrowFashion = document.querySelector('.fashion-slider-arrow');
+            const cardFashion = document.querySelector('.product_cards');
+            arrowFashion.addEventListener('click', () => { const cardWidth = cardFashion.offsetWidth + 24; sliderFashion.scrollBy({ left: cardWidth, behavior: 'smooth' }); });
+
+            // Pets
+            const sliderPets = document.querySelector('.pets_kitchen_product_list');
+            const arrowPets = document.querySelector('.pets-slider-arrow');
+            const cardPets = document.querySelector('.product_cards');
+            arrowPets.addEventListener('click', () => { const cardWidth = cardPets.offsetWidth + 24; sliderPets.scrollBy({ left: cardWidth, behavior: 'smooth' }); });
+
+            // Baby & Kids
+            const sliderBaby = document.querySelector('.baby_kitchen_product_list');
+            const arrowBaby = document.querySelector('.baby-slider-arrow');
+            const cardBaby = document.querySelector('.product_cards');
+            arrowBaby.addEventListener('click', () => { const cardWidth = cardBaby.offsetWidth + 24; sliderBaby.scrollBy({ left: cardWidth, behavior: 'smooth' }); });
+
+            // Automotive & Tools
+            const sliderAutomotive = document.querySelector('.automotive_kitchen_product_list');
+            const arrowAutomotive = document.querySelector('.automotive-slider-arrow');
+            const cardAutomotive = document.querySelector('.product_cards');
+            arrowAutomotive.addEventListener('click', () => { const cardWidth = cardAutomotive.offsetWidth + 24; sliderAutomotive.scrollBy({ left: cardWidth, behavior: 'smooth' }); });
+
+            // all Category
+            const sliderAllCategory = document.querySelector('.all_category_product_list');
+            const arrowAllCategory = document.querySelector('.all-category-slider-arrow');
+            const cardAllCategory = document.querySelector('.explore_cards');
+            arrowAllCategory.addEventListener('click', () => { const cardWidth = cardAllCategory.offsetWidth + 24; sliderAllCategory.scrollBy({ left: cardWidth, behavior: 'smooth' }); });
+
         </script>
     </body>
 </html>

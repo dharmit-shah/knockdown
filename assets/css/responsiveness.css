@@ -168,4 +168,7 @@
   .automotive_kitchen_product_list{grid-auto-columns: calc((100% - (24px * 0.5)) / 1.5);}
   .similarDeals_product_list{grid-auto-columns: calc((100% - (24px * 0.5)) / 1.5);}
   .all_category_product_list{grid-auto-columns: calc((100% - (24px * 0.5)) / 4.5);}
+  .signup-tabbing li {padding: 14px;}
+  .signup-tabbing li a img {width: 50px;height: 50px;}
+  .signup-tabbing {flex-direction: column;}
 }

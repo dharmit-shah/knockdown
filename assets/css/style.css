@@ -152,7 +152,7 @@ a{text-decoration: none;}
 .search_title h2{color: rgba(53, 162, 126, 1);font-weight: 700;font-size:48px;}
 .search_title p{font-size: 18px;color: var(--primary);}
 /* signup Page */
-.signup_component{background-image: url(../img/sign-up-bg.svg);background-repeat: no-repeat;background-size: cover;padding: 80px 40px;height: 100%;}
+.signup_component{background-image: url(../img/sign-up-bg.svg);background-repeat: no-repeat;background-size: cover;padding: 80px 40px;height: 100%;min-height: 100vh;display: flex;align-items: center;background-position: bottom;}
 .signup_form{padding: 36px;border-radius: 8px;background-color: var(--white);display: flex;flex-direction: column;gap: 24px;box-shadow: 0px 0px 15px -2px rgba(19, 42, 76, 0.1);}
 .signup_component .container-fluid{display: flex;align-items: center;height: 100%;}
 .signup_title{display: flex;flex-direction: column;gap: 16px;align-items: center;}
@@ -173,7 +173,7 @@ a{text-decoration: none;}
 .already_have_account p{color: var(--primary);}
 .already_have_account a{color: var(--primary);text-decoration: underline;}
 /* signin Page */
-.signin_component{background-image: url(../img/signin-bg.svg);background-repeat: no-repeat;background-size: cover;padding: 80px 40px;height: 100%;}
+.signin_component{background-image: url(../img/signin-bg.svg);background-repeat: no-repeat;background-size: cover;padding: 80px 40px;height: 100%;min-height: 100vh;display: flex;align-items: center;}
 .signin_component .container-fluid{display: flex;align-items: center;height: 100%;}
 /* 404 Page */
 .error_component{background-image: url(../img/404-bg.svg);background-repeat: no-repeat;background-size: cover;padding: 80px 40px;height: calc(100vh - 162px);}
@@ -317,3 +317,10 @@ a{text-decoration: none;}
 .mega_menu .mega_col a {color: var(--primary);font-size: 18px;transition: color 0.2s;width: max-content;}
 .mega_menu_title{display: flex;align-items: center;gap: 8px;padding-bottom: 24px;}
 .mega_menu_title h4{color: var(--primary);font-weight: 700;font-size: 24px;}
+/* signup */
+.signup-tabbing{display: flex;justify-content: space-between;gap: 16px;padding: 0;margin: 0;}
+.signup-tabbing li{border: 1px solid rgba(214, 220, 229, 1);border-radius: 8px;padding: 24px;list-style: none;}
+.signup-tabbing li a img{width: 70px;height: 70px;object-fit: contain;}
+.signup-tabbing li a{display: flex;align-items: center;flex-direction: column;text-align: center;}
+.signup-tabbing li a span{color: var(--primary);font-size: 16px;font-weight: 400;}
+.signup_form_box select {height: 48px;border: 1px solid rgba(214, 220,229, 1);border-radius: 8px;}
